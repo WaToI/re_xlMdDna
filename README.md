@@ -7,6 +7,8 @@ You can make mermaid-string entered in Excel into autoshape.
 Write mermaid in cells.
 call = mermaid (target-range)
 
+![howto01](https://github.com/WaToI/re_xlMdDna/assets/23034857/6519743e-953b-4d19-9edf-c03db997c7e2)
+
 ![sample](https://github.com/WaToI/re_xlMdDna/assets/23034857/24adc55a-ad33-483c-976c-742b0f793b10)
 
 #### THIRD-PARTY SOFTWARE NOTICES AND INFORMATION
