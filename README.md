@@ -17,6 +17,7 @@ call = mermaid (target-range)
 
 ### Sample
 
+```
 #### svg ok
 sequenceDiagram
     Alice->>+John: Hello John, how are you?
@@ -150,4 +151,5 @@ quadrantChart
     Campaign E: [0.40, 0.34]
     Campaign F: [0.35, 0.78]
 
+```
 
