@@ -10,8 +10,8 @@ call = mermaid (target-range)
 ![sample](https://github.com/WaToI/re_xlMdDna/assets/23034857/24adc55a-ad33-483c-976c-742b0f793b10)
 
 #### THIRD-PARTY SOFTWARE NOTICES AND INFORMATION
-[Excel-DNA](https://excel-dna.net/)
-[Memmaid](https://mermaid.live/)
+* [Excel-DNA](https://excel-dna.net/)
+* [Memmaid](https://mermaid.live/)
 
 ### Sample
 
