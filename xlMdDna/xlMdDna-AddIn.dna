@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DnaLibrary Name="xlMdDna Add-In" RuntimeVersion="v4.0" xmlns="http://schemas.excel-dna.net/addin/2018/05/dnalibrary">
+  <ExternalLibrary Path="xlMdDna.dll" ExplicitExports="false" LoadFromBytes="true" Pack="true" IncludePdb="false"/>
+  <Reference Path="ExCSS.dll" Pack="true"/>
+  <Reference Path="Fizzler.dll" Pack="true"/>
+  <Reference Path="Microsoft.Web.WebView2.Core.dll" Pack="false"/>
+  <Reference Path="Microsoft.Web.WebView2.WinForms.dll" Pack="true"/>
+  <Reference Path="Microsoft.Web.WebView2.Wpf.dll" Pack="true"/>
+  <Reference Path="Microsoft.Xaml.Behaviors.dll" Pack="true"/>
+  <Reference Path="ReactiveProperty.Core.dll" Pack="true"/>
+  <Reference Path="ReactiveProperty.dll" Pack="true"/>
+  <Reference Path="Svg.dll" Pack="true"/>
+  <Reference Path="System.Buffers.dll" Pack="true"/>
+  <Reference Path="System.ComponentModel.Annotations.dll" Pack="true"/>
+  <Reference Path="System.Memory.dll" Pack="true"/>
+  <Reference Path="System.Numerics.Vectors.dll" Pack="true"/>
+  <Reference Path="System.Reactive.dll" Pack="true"/>
+  <Reference Path="System.Runtime.CompilerServices.Unsafe.dll" Pack="true"/>
+  <Reference Path="System.Threading.Tasks.Extensions.dll" Pack="true"/>
+  <Reference Path="runtimes\win-x64\native\WebView2Loader.dll" Pack="true"/>
+  <Reference Path="runtimes\win-x86\native\WebView2Loader.dll" Pack="true"/>
+  <!--<ExternalLibrary Path="runtimes\win-x64\native\WebView2Loader.dll" ExplicitExports="false" LoadFromBytes="true" Pack="true" IncludePdb="false"/>-->
+  <!--<ExternalLibrary Path="runtimes\win-x86\native\WebView2Loader.dll" ExplicitExports="false" LoadFromBytes="true" Pack="true" IncludePdb="false"/>-->
+</DnaLibrary>

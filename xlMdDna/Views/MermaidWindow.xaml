@@ -1,0 +1,46 @@
+﻿<Window x:Class="xlMdDna.Views.MermaidWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:xlMdDna.Views"
+        mc:Ignorable="d"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        xmlns:settings="clr-namespace:xlMdDna.Properties"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        Loaded="MainWindow_Loaded"
+        Title="{Binding Title, Source={x:Static settings:Settings.Default}, Mode=TwoWay}"
+        Height="{Binding Height, Source={x:Static settings:Settings.Default}, Mode=TwoWay}" 
+        Width="{Binding Width, Source={x:Static settings:Settings.Default}, Mode=TwoWay}"
+        Top="{Binding Top, Source={x:Static settings:Settings.Default}, Mode=TwoWay}"
+        Left="{Binding Left, Source={x:Static settings:Settings.Default}, Mode=TwoWay}"
+        WindowState="{Binding WindState.Value}"
+        >
+
+  <Window.DataContext>
+    <local:MermaidWindowVM/>
+  </Window.DataContext>
+
+
+  <i:Interaction.Triggers>
+    <i:EventTrigger EventName="Closing" >
+      <i:InvokeCommandAction Command="{Binding CmdWindClosing}"  CommandParameter="{Binding ElementName=MainWindow}"/>
+    </i:EventTrigger>
+  </i:Interaction.Triggers>
+
+  <DockPanel>
+    <wv2:WebView2 x:Name="webView"  DockPanel.Dock="Top" WebMessageReceived="webView_WebMessageReceived">
+      <!--NavigationCompleted="WebView_NavigationCompleted"-->
+      <!--<wv2:WebView2.CreationProperties>
+        <wv2:CoreWebView2CreationProperties UserDataFolder="C:\temp"/>
+      </wv2:WebView2.CreationProperties>-->
+      <!-- イベントトリガーでも動作 -->
+      <!--<i:Interaction.Triggers> 
+        <i:EventTrigger EventName="WebMessageReceived" >
+          <i:InvokeCommandAction Command="{Binding CmdOK}"/>
+        </i:EventTrigger>
+      </i:Interaction.Triggers>-->
+    </wv2:WebView2>
+  </DockPanel>
+
+</Window>
